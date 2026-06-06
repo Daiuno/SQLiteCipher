@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SQLiteSQLCipher",
+    name: "SQLiteCipher",
     platforms: [
         .iOS(.v15),
         .macOS(.v10_13),
@@ -11,7 +11,7 @@ let package = Package(
         .visionOS(.v1)
     ],
     products: [
-        .library(name: "SQLiteSQLCipher", targets: ["SQLiteSQLCipher"])
+        .library(name: "SQLiteCipher", targets: ["SQLiteCipher"])
     ],
     dependencies: [
         .package(
@@ -22,7 +22,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SQLiteSQLCipher",
+            name: "SQLiteCipher",
             dependencies: [
                 .product(name: "SQLite", package: "SQLite.swift")
             ],
